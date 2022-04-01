@@ -108,3 +108,130 @@ header img {
     margin-left: 10px;
     background-image: url("../icons/down-arrow.svg");
 }
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.background-img {
+    background-image: url("../images/BTCback.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;    
+}
+
+.main-exchange-container__title h2{
+    margin-bottom: 30px;
+    font-size: var(--lg);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container__title p{
+    margin-bottom: 30px;
+    font-size: var(--sm);
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+
+
+.main-exchange-container__table-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 100px;
+    width: 70%;
+    min-width: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 2px;
+    justify-content: center;
+}
+    
+.main-exchange-container__left-icon{
+    background-image: url(../icons/left-vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-exchange-container__elements-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "element1 price1"
+    "element2 price2"
+    "element3 price3"
+    "element4 price4";
+}
+
+.main-exchange-container__table-container__element-1{
+    grid-area: element1;
+    text-align: left;
+}
+
+.main-exchange-container__table-container__price-1{
+    grid-area: price1;  
+    text-align: right;  
+}
+
+.main-exchange-container__table-container__element-2{
+    grid-area: element2;
+    text-align: left;
+}
+
+.main-exchange-container__table-container__price-2{
+    grid-area: price2;
+    text-align: right;  
+}
+
+.main-exchange-container__table-container__element-3{
+    grid-area: element3;
+    text-align: left;
+}
+
+.main-exchange-container__table-container__price-3{
+    grid-area: price3;
+    text-align: right;
+}
+
+.main-exchange-container__table-container__element-4{
+    grid-area: element4;
+    text-align: left;
+}
+
+.main-exchange-container__table-container__price-4{
+    grid-area: price4;
+    text-align: right;
+}
+
+
+.main-exchange-container__right-icon{
+    background-image: url(../icons/right-vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
